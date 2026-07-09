@@ -1,9 +1,1 @@
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', event => {
-    const target = document.querySelector(link.getAttribute('href'));
-    if (target) {
-      event.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-});
+const topBtn=document.getElementById('topBtn');window.addEventListener('scroll',()=>{topBtn.style.display=window.scrollY>500?'block':'none'});topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href');const el=document.querySelector(id);if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'});}}));
