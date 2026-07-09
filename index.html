@@ -3,97 +3,177 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KYUSHU Autumn Journey</title>
+  <title>KYUSHU｜Autumn Journey</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Serif+TC:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="grain"></div>
-  <header class="hero">
-    <div class="stamp">Travel Journal</div>
-    <div class="map-line" aria-hidden="true">九州</div>
-    <p class="eyebrow">JAPAN · AUTUMN</p>
-    <h1>KYUSHU</h1>
-    <p class="subtitle">Autumn Journey</p>
-    <div class="divider"></div>
-    <p class="date">2026.10.07 — 10.12</p>
-    <p class="route">Kumamoto · Aso · Yufuin · Hakata</p>
-    <a class="scroll" href="#overview">Explore ↓</a>
+  <div class="paper-grain"></div>
+  <header class="hero" id="top">
+    <nav class="nav">
+      <a href="#top" class="brand">KYUSHU</a>
+      <div class="nav-links">
+        <a href="#flight">Flight</a>
+        <a href="#hotels">Hotels</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#notes">Notes</a>
+      </div>
+    </nav>
+
+    <section class="cover">
+      <p class="eyebrow">Travel Journal</p>
+      <h1>KYUSHU</h1>
+      <p class="subtitle">Autumn Journey</p>
+      <div class="thin-line"></div>
+      <p class="date">2026.10.07 — 10.12</p>
+      <p class="route">Kumamoto · Aso · Yufuin · Hakata</p>
+      <a class="scroll-link" href="#flight">Explore ↓</a>
+    </section>
   </header>
 
   <main>
-    <section id="overview" class="section intro">
-      <p class="section-kicker">OVERVIEW</p>
-      <h2>六天五夜，從熊本到博多的秋日旅行。</h2>
-      <p>熊本城、阿蘇高千穗、teamLab、由布院、周遊太宰府、船夫遊船柳州</p>
+    <section class="section intro reveal">
+      <p class="section-kicker">Overview</p>
+      <h2>一份簡約、好查、可以慢慢修改的旅行手冊。</h2>
+      <p>這裡可以放你的旅行摘要。之後如果要改文字，只要打開 <strong>index.html</strong>，搜尋你想修改的字即可。</p>
     </section>
 
-    <section class="section grid two">
-      <article class="card boarding">
-        <span class="icon">✈</span>
-        <p class="label">FLIGHT</p>
-        <h3>STARLUX JX846</h3>
-        <div class="flight-row"><strong>TPE</strong><span></span><strong>KMJ</strong></div>
-        <p>2026/10/07　07:45 → 11:10</p>
-        <hr>
-        <h3>FUK → TPE</h3>
-        <p>2026/10/12　回程航班時間待補</p>
-      </article>
-
-      <article class="card">
-        <span class="icon">⌂</span>
-        <p class="label">HOTELS</p>
-        <h3>CANDEO HOTELS Kumamoto Shinshigai</h3>
-        <p>10/07 — 10/09｜熊本市區，方便安排熊本城與阿蘇高千穗。</p>
-        <hr>
-        <h3>THE BLOSSOM HAKATA Premier</h3>
-        <p>10/09 — 10/12｜靠近博多車站，適合 JR、逛街與前往機場。</p>
-      </article>
-    </section>
-
-    <section class="section">
-      <p class="section-kicker">ITINERARY</p>
-      <h2>Daily Notes</h2>
-      <div class="timeline">
-        <article class="day-card">
-          <div class="day-num">DAY 01</div>
-          <div><h3>Kumamoto</h3><p>台北飛熊本 → 熊本城 → 城彩苑 → 飯店 Check-in → 熊本市區晚餐</p></div>
+    <section class="section grid-two reveal" id="flight">
+      <div>
+        <p class="section-kicker">Flight</p>
+        <h2>航班資訊</h2>
+      </div>
+      <div class="ticket-list">
+        <article class="ticket-card">
+          <div class="ticket-head"><span class="icon">✈︎</span><span>Outbound</span></div>
+          <h3>STARLUX｜JX846</h3>
+          <div class="airport-row">
+            <div><strong>TPE</strong><small>台北</small></div>
+            <span class="dash"></span>
+            <div><strong>KMJ</strong><small>熊本</small></div>
+          </div>
+          <p>2026/10/07　07:45 → 11:10</p>
         </article>
-        <article class="day-card">
-          <div class="day-num">DAY 02</div>
-          <div><h3>Aso · Takachiho</h3><p>阿蘇火山、草千里、高千穗峽。一日團或包車，讓長輩步調舒服。</p></div>
-        </article>
-        <article class="day-card">
-          <div class="day-num">DAY 03</div>
-          <div><h3>Kumamoto → Hakata</h3><p>新幹線前往博多 → THE BLOSSOM 放行李 → teamLab Forest → 博多晚餐。</p></div>
-        </article>
-        <article class="day-card">
-          <div class="day-num">DAY 04</div>
-          <div><h3>Yufuin</h3><p>由布院之森 → 湯之坪街道 → 金鱗湖 → 奈良美智相關展館 → 回博多。</p></div>
-        </article>
-        <article class="day-card">
-          <div class="day-num">DAY 05</div>
-          <div><h3>Yanagawa · Dazaifu</h3><p>柳川遊船、鰻魚飯、太宰府、Blue Bottle 或天神博多逛街。</p></div>
-        </article>
-        <article class="day-card">
-          <div class="day-num">DAY 06</div>
-          <div><h3>Hakata → Taipei</h3><p>早餐、市區散步、前往福岡機場，回台灣。</p></div>
+        <article class="ticket-card muted">
+          <div class="ticket-head"><span class="icon">✈︎</span><span>Return</span></div>
+          <h3>STARLUX｜回程航班待補</h3>
+          <div class="airport-row">
+            <div><strong>FUK</strong><small>福岡</small></div>
+            <span class="dash"></span>
+            <div><strong>TPE</strong><small>台北</small></div>
+          </div>
+          <p>2026/10/12　時間待補</p>
         </article>
       </div>
     </section>
 
-    <section class="section grid three">
-      <article class="mini-card"><span>🚄</span><h3>Train</h3><p>熊本到博多、由布院之森為主要 JR 移動。</p></article>
-      <article class="mini-card"><span>☕</span><h3>Café</h3><p>博多深度旅遊、天神咖啡時間。</p></article>
-      <article class="mini-card"><span>◇</span><h3>Style</h3><p>米白、奶茶、鼠尾草綠；像一本簡約旅行筆記。</p></article>
+    <section class="section reveal" id="hotels">
+      <p class="section-kicker">Hotels</p>
+      <h2>住宿安排</h2>
+      <div class="hotel-grid">
+        <article class="hotel-card">
+          <span class="card-label">Kumamoto｜Day 1–2</span>
+          <h3>CANDEO HOTELS<br>Kumamoto Shinshigai</h3>
+          <p>2026/10/07 — 10/09</p>
+          <ul>
+            <li>熊本市區</li>
+            <li>適合安排熊本城、新市街</li>
+            <li>Check-in / Check-out 可自行補上</li>
+          </ul>
+        </article>
+        <article class="hotel-card">
+          <span class="card-label">Hakata｜Day 3–5</span>
+          <h3>THE BLOSSOM<br>HAKATA Premier</h3>
+          <p>2026/10/09 — 10/12</p>
+          <ul>
+            <li>靠近博多車站</li>
+            <li>適合搭 JR、前往機場</li>
+            <li>購物與晚餐都方便</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="timeline">
+      <p class="section-kicker">Itinerary</p>
+      <h2>每日時間軸</h2>
+      <p class="section-note">時間如果還不確定，可以先寫 Morning / Afternoon / Evening，之後再慢慢補。</p>
+
+      <div class="day-block">
+        <div class="day-title"><span>DAY 01</span><h3>Arrival in Kumamoto</h3></div>
+        <div class="timeline">
+          <div class="tl-item"><time>07:45</time><div><h4>STARLUX JX846</h4><p>台北出發，前往熊本。</p></div></div>
+          <div class="tl-item"><time>11:10</time><div><h4>抵達熊本機場</h4><p>入境後前往市區，視體力安排午餐。</p></div></div>
+          <div class="tl-item"><time>Afternoon</time><div><h4>熊本城・城彩苑</h4><p>第一天以輕鬆散步為主，不把行程排太滿。</p></div></div>
+          <div class="tl-item stay"><time>Night</time><div><h4>Stay｜CANDEO HOTELS</h4><p>Kumamoto Shinshigai</p></div></div>
+        </div>
+      </div>
+
+      <div class="day-block">
+        <div class="day-title"><span>DAY 02</span><h3>Mountains & Valleys</h3></div>
+        <div class="timeline">
+          <div class="tl-item"><time>Morning</time><div><h4>阿蘇火山・草千里</h4><p>欣賞九州自然景觀，建議以包車或一日團為主。</p></div></div>
+          <div class="tl-item"><time>Afternoon</time><div><h4>高千穗峽</h4><p>爸媽若不想划船，可安排散步、拍照與休息。</p></div></div>
+          <div class="tl-item stay"><time>Night</time><div><h4>Stay｜CANDEO HOTELS</h4><p>回熊本休息。</p></div></div>
+        </div>
+      </div>
+
+      <div class="day-block">
+        <div class="day-title"><span>DAY 03</span><h3>Moving to Hakata</h3></div>
+        <div class="timeline">
+          <div class="tl-item"><time>Morning</time><div><h4>熊本 → 博多</h4><p>搭乘新幹線，抵達後先到飯店放行李。</p></div></div>
+          <div class="tl-item"><time>Afternoon</time><div><h4>teamLab Forest</h4><p>下午前往大巨蛋區域，晚上回博多用餐。</p></div></div>
+          <div class="tl-item stay"><time>Night</time><div><h4>Stay｜THE BLOSSOM HAKATA Premier</h4><p>博多住宿第一晚。</p></div></div>
+        </div>
+      </div>
+
+      <div class="day-block">
+        <div class="day-title"><span>DAY 04</span><h3>A Day in Yufuin</h3></div>
+        <div class="timeline">
+          <div class="tl-item"><time>Morning</time><div><h4>由布院之森</h4><p>從博多搭乘觀光列車前往由布院。</p></div></div>
+          <div class="tl-item"><time>Noon</time><div><h4>湯之坪街道・金鱗湖</h4><p>逛街、午餐、甜點，步調放慢。</p></div></div>
+          <div class="tl-item"><time>Afternoon</time><div><h4>奈良美智美術館</h4><p>依開放時間調整前後順序。</p></div></div>
+          <div class="tl-item stay"><time>Night</time><div><h4>Stay｜THE BLOSSOM HAKATA Premier</h4><p>返回博多。</p></div></div>
+        </div>
+      </div>
+
+      <div class="day-block">
+        <div class="day-title"><span>DAY 05</span><h3>Canal & Shrine</h3></div>
+        <div class="timeline">
+          <div class="tl-item"><time>Morning</time><div><h4>柳川遊船</h4><p>安排遊船與鰻魚飯，爸媽若累可縮短停留。</p></div></div>
+          <div class="tl-item"><time>Afternoon</time><div><h4>太宰府天滿宮</h4><p>參道散步、梅枝餅、咖啡店。</p></div></div>
+          <div class="tl-item"><time>Evening</time><div><h4>天神 / 博多逛街</h4><p>最後一晚安排購物與晚餐。</p></div></div>
+          <div class="tl-item stay"><time>Night</time><div><h4>Stay｜THE BLOSSOM HAKATA Premier</h4><p>整理行李。</p></div></div>
+        </div>
+      </div>
+
+      <div class="day-block">
+        <div class="day-title"><span>DAY 06</span><h3>Homeward Bound</h3></div>
+        <div class="timeline">
+          <div class="tl-item"><time>Morning</time><div><h4>博多早餐・市區散步</h4><p>依航班時間安排輕鬆行程。</p></div></div>
+          <div class="tl-item"><time>Noon</time><div><h4>福岡機場</h4><p>從博多前往機場，準備回台灣。</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="notes">
+      <p class="section-kicker">Notes</p>
+      <h2>旅行備註</h2>
+      <div class="note-grid">
+        <article><span>01</span><h3>交通</h3><p>新幹線、由布院之森、柳川太宰府交通可在這裡補充。</p></article>
+        <article><span>02</span><h3>餐廳</h3><p>把想吃的店放這裡，避免每天臨時找。</p></article>
+        <article><span>03</span><h3>預算</h3><p>機票、住宿、JR、餐費可以之後再加。</p></article>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>KYUSHU Autumn Journey · 2026</p>
+    <p>KYUSHU — Autumn Journey</p>
+    <a href="#top">Back to top ↑</a>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
