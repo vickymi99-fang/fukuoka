@@ -1,1 +1,4 @@
-const topBtn=document.getElementById('topBtn');window.addEventListener('scroll',()=>{topBtn.style.display=window.scrollY>500?'block':'none'});topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href');const el=document.querySelector(id);if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'});}}));
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{ if(entry.isIntersecting) entry.target.classList.add('show'); });
+},{threshold:0.12});
+document.querySelectorAll('.section,.card,.day-card,.mini-card').forEach(el=>{el.classList.add('reveal');observer.observe(el)});
